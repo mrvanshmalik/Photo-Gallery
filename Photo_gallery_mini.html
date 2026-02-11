@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+    
+
+</head>
+
+<body>
+    <header id="nav"
+        class="w-full text-center h-20  bg-amber-950 grid grid-cols-8 grid-rows-1 items-center border-b-8 border-b-white/25">
+        <div id="nav-head" class="col-span-2 col-start-1">
+            <h1 class="text-white text-3xl font-bold">Photo Gallery </h1>
+        </div>
+
+        <div id="btn" class="col-span-3 col-start-6 flex justify-evenly gap-4 ">
+            <button id="btn-1" class="btn-primery ">Add Photo</button>
+            <button id="btn-2" class="btn-primery ">Remove Photo</button>
+            <!-- <button class="btn-primery">Update Photo</button> -->
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div id="content"
+                class="grid grid-cols-4 gap-3 grid-rows-3 flex-wrap bg-amber-50  xl:grid-cols-6 xl:grid-rows-auto sm:grid-cols-3 sm: grid-row-auto  md:grid-cols-4 md:grid-rows-auto">
+
+
+                <img class="img-primery"
+                    src="https://images.unsplash.com/photo-1770364360811-58c0fdb88f18?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="img-primery"
+                    src="https://images.unsplash.com/photo-1769372131380-a6cccb922301?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="img-primery"
+                    src="https://images.unsplash.com/photo-1769116404486-9cb6ed1c444b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="img-primery"
+                    src="https://images.unsplash.com/photo-1729188430272-25eff8302c0e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="img-primery"
+                    src="https://images.unsplash.com/photo-1770030190306-3507dfe6469c?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="img-primery"
+                    src="https://images.unsplash.com/photo-1770562459383-255f853f5463?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+                    alt="">
+                <img class="img-primery"
+                    src="https://images.unsplash.com/photo-1769251297393-8178b5988b08?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+                    alt="">
+
+
+
+            </div>
+        </section>
+
+        <section id="Add-photo" class="fixed inset-0 bg-black/30 backdrop-blur-sm pt-20 pl-40 hidden ">
+            <form id="form" action=""
+                class="flex flex-col border-5 p-4 w-100 rounded-2xl transition-transform hover:scale-105 duration-500 bg-linear-to-tr to-amber-300 from-red-300/50">
+
+
+                <div class="border-black/50 border w-fit p-1 bg-red-300 hover:bg-red-800/50 transition-transform hover:scale-105 duration-300 active:scale-95 rounded-full">
+                    <button type="button" id="exit" >Exit</button>
+                </div>
+
+
+                <label for="img-name">Image Name :</label>
+                <input id="img-name" type="text" placeholder="Image Name" name="name" required
+                    class=" rounded-2xl text-center bg-white mt-2 hover:bg-white/80">
+
+
+                <label for="url-id">Img URL : </label>
+                <input id="url-id" type="url" required placeholder="Enter url "
+                    class="rounded-2xl text-center bg-white mt-2 hover:bg-white/80">
+
+                <button type="submit"
+                    class=" p-2 mt-2 w-fit relative ml-35 font-bold transition-transform duration-400 ease-in-outhover:scale-110 active:scale-90 rounded-3xl cursor-pointer bg-linear-to-tr to-red-400 from-yellow-400 text-white">Sumbit
+                </button>
+            </form>
+
+
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="index.js"></script>
+ 
+
+</body>
+
+</html>

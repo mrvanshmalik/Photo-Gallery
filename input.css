@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+@theme{
+    --padding-10: 100px ;
+    --padding-5: 50px ;
+
+    --padding-c-50: 25%;
+}
+
+@layer components{
+    
+
+    .btn-primery{
+        @apply relative border-white/15 overflow-hidden  bg-linear-to-bl from-amber-900 to-red-600
+        rounded p-1  text-white font-bold transition-all duration-300 ease-out hover:-translate-y-1
+        hover:cursor-pointer hover:border-blue-900/25
+        hover:shadow-2xl hover:shadow-yellow-900/80
+        active:translate-y-0 active:scale-[1]
+    }
+
+    .img-primery{
+        @apply  p-2 m-2 object-cover w-full h-full  ease-in-out transition-transform duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gray-950 hover:cursor-pointer hover:bg-amber-900 opacity-85
+        hover:opacity-200 active:scale-90 active:translate-y-0 active:shadow-none 
+
+    }
+}
